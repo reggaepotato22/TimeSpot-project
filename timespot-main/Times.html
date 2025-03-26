@@ -3,68 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Horological Watches</title>
-    <link rel="stylesheet" href="Times.css">
+    <title>TimeSpot - Luxury Watches</title>
+    <link rel="stylesheet" href="times.css">
 </head>
 <body>
-
     <header>
-        <nav class="top-nav">
-            <div class="nav-container">
-                <a href="Times.html" class="logo">TimeSpot</a>
-                
-                <div class="brand-logos">
-                    <a href="./watches info/patek.html"><img src="/logos-images/patek.png" alt="Patek Philippe"></a>
-                    <a href="./watches info/ap.html"><img src="/logos-images/ap.png" alt="Audemars Piguet"></a>
-                    <a href="./watches info/vach.html"><img src="/logos-images/vach.png" alt="Vacheron Constantin"></a>
-                    <a href="./watches info/rolex.html"><img src="/logos-images/rolex.png" alt="Rolex"></a>
-                    <a href="./watches info/seiko.html"><img src="/logos-images/sei.png" alt="Seiko"></a>
-                </div>
-    
-                </ul>
-            </div>
+        <nav>
+            <a href="index.html" class="logo">TimeSpot</a>
         </nav>
     </header>
 
     <main>
-        <section id="HomePage" class="hero">
+        <section class="hero">
             <div class="main-content">
                 <h2>Explore the World of Luxury Watches</h2>
-                <p>Discover the finest timepieces from the world's most prestigious brands.</p>
-                <a href="#brand-categories" class="explore-btn">Explore Brands</a>
+                <p>Discover the finest timepieces from prestigious brands.</p>
+                <a href="#brand-section" class="explore-btn">Explore Brands</a>
             </div>
         </section>
-        <p>
-            Timespot buzzed with the fervent energy of horological enthusiasts, a digital marketplace where the ticking heart of craftsmanship met the discerning eye of collectors. Here, vintage chronographs rubbed shoulders with cutting-edge smartwatches, each piece accompanied by a chorus of reviews, detailed specifications, and passionate discussions. Buyers navigated a sea of listings, seeking that perfect timepiece, while sellers, both seasoned dealers and individual aficionados, presented their treasures with meticulous care. Timespot was more than a marketplace; it was a community, a shared space where the love of watches transcended mere transactions, fostering a rich tapestry of knowledge and appreciation.
-        </p>
-        <section id="brand-categories" class="brand-categories">
-            <a href="./watches info/patek.html">
-                <img src="/logos-images/patek.png" alt="Patek Philippe">
-                <h3></h3>
-            </a>
-            <a href="./watches info/ap.html">
-                <img src="/logos-images/ap.png" alt="Audemars Piguet">
-                <h3></h3>
-            </a>
-            <a href="./watches info/vach.html">
-                <img src="/logos-images/vach.png" alt="Vacheron Constantin">
-                <h3></h3>
-            </a>
-            <a href="./watches info/rolex.html">
-                <img src="/logos-images/rolex.png" alt="Rolex">
-                <h3></h3>
-            </a>
-            <a href="./watches info/seiko.html">
-                <img src="/logos-images/pngwing.com.png" alt="Seiko">
-                <h3></h3>
-            </a>
+
+        <div class="container">
+            <h1>Used Watches for Sale</h1>
+
+            <!-- Filter Section -->
+            <div class="filters">
+                <select id="brand">
+                    <option value="">Brand</option>
+                    <option>Rolex</option>
+                    <option>Patek Philippe</option>
+                    <option>Vacheron Constantin</option>
+                    <option>Audemars Piguet</option>
+                    <option>Seiko</option>
+                </select>
+
+                <select id="model">
+                    <option value="">Model</option>
+                    <option>Submariner</option>
+                    <option>Daytona</option>
+                    <option>Nautilus</option>
+                    <option>Overseas</option>
+                    <option>Royal Oak</option>
+                    <option>Prospex</option>
+                </select>
+
+                <select id="movement">
+                    <option value="">Movement</option>
+                    <option>Automatic</option>
+                    <option>Manual</option>
+                    <option>Quartz</option>
+                </select>
+
+                <input type="number" id="min-price" placeholder="Min Price">
+                <input type="number" id="max-price" placeholder="Max Price">
+                
+                <button id="search-btn">Search</button>
+                <button id="reset-btn">Reset</button>
+            </div>
+
+            <div id="results" class="results"></div>
+            
+        </div>
+
+        <!-- Brand Section (Added) -->
+        <section id="brand-section">
+            <h2>Explore Popular Brands</h2>
+            <div class="brand-container">
+                <div class="brand-card">
+                    <img src="/watches-imgs/submariner.png" alt="Rolex">
+                    <h3>Rolex</h3>
+                    <p>Starting at $8,000</p>
+                </div>
+                <div class="brand-card">
+                    <img src="/watches-imgs/patek.png" alt="Patek Philippe">
+                    <h3>Patek Philippe</h3>
+                    <p>Starting at $20,000</p>
+                </div>
+                <div class="brand-card">
+                    <img src="/watches-imgs/vacheron.jpeg" alt="Vacheron Constantin">
+                    <h3>Vacheron Constantin</h3>
+                    <p>Starting at $18,000</p>
+                </div>
+                <div class="brand-card">
+                    <img src="/watches-imgs/ap.png" alt="Audemars Piguet">
+                    <h3>Audemars Piguet</h3>
+                    <p>Starting at $25,000</p>
+                </div>
+                <div class="brand-card">
+                    <img src="/watches-imgs/seiko.png" alt="Seiko">
+                    <h3>Seiko</h3>
+                    <p>Starting at $500</p>
+                </div>
+            </div>
         </section>
-        
+
     </main>
 
     <footer>
-        <div class="footer-content"><p>2025 Horological World of Watches. All rights reserved.</p></div>
+        <p>© 2025 TimeSpot. All rights reserved.</p>
     </footer>
 
+    <script src="ts.js"></script>
 </body>
 </html>

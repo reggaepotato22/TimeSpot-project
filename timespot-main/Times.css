@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
     font-family: NeikoRegular;
     src: url(NeikoRegular-XGMP2.otf);
 }
@@ -115,42 +115,4 @@ header {
     border-radius: 5px;
     font-size: 1.1rem;
     transition: background-color 0.3s ease;
-}
-
-.brand-categories {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 2rem;
-    text-align: center;
-    padding: 5rem 1rem;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.brand-categories a {
-    display: flex;
-    padding: 1.5rem;
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-decoration: none;
-    color: inherit;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.brand-categories a:hover {
-    transform: scale(1.03);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-.brand-categories img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 1rem;
-}
-
-.brand-categories h3 {
-    font-size: 1.2rem;
-    color: #555;
-}
-
+} */
