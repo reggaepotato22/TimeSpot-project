@@ -1,27 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TimeSpot - Luxury Watches</title>
     <link rel="stylesheet" href="Times.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
+    <!-- Navbar -->
     <header>
         <nav>
             <a href="index.html" class="logo">TimeSpot</a>
+            <div class="nav-links">
+                <a href="#">Home</a>
+                <a href="#brand-section">Brands</a>
+                <a href="#contact">Contact</a>
+
+            </div>
         </nav>
     </header>
 
+    <!-- Hero Section -->
     <main>
         <section class="radiant">
             <div class="main-content">
                 <h2>Explore the World of Luxury Watches</h2>
                 <p>Discover the finest timepieces from prestigious brands.</p>
                 <a href="#brand-section" class="explore-btn">Explore Brands</a>
+                <p class="info-text">
+                    At TimeSpot, we bring you a carefully selected collection of luxury timepieces from the world's most renowned brands. Whether you are a passionate collector or someone seeking the perfect statement piece, our curated assortment offers timeless craftsmanship, unmatched precision, and enduring elegance. Explore our range and discover the watch that tells your story.
+                </p>
             </div>
         </section>
 
+        <!-- Search Filters -->
         <div class="container">
             <h1>Used Watches for Sale</h1>
 
@@ -54,15 +69,15 @@
 
                 <input type="number" id="min-price" placeholder="Min Price">
                 <input type="number" id="max-price" placeholder="Max Price">
-                
+
                 <button id="search-btn">Search</button>
                 <button id="reset-btn">Reset</button>
             </div>
 
             <div id="results" class="results"></div>
-
         </div>
 
+        <!-- Brands Section -->
         <section id="brand-section">
             <h2>Explore Popular Brands</h2>
             <div class="brand-container">
@@ -93,13 +108,36 @@
                 </div>
             </div>
         </section>
-
     </main>
 
+    <!-- Footer -->
     <footer>
         <p>© 2025 TimeSpot. All rights reserved.</p>
     </footer>
 
     <script src="ts.js"></script>
 </body>
+<footer id="contact">
+    <h3>Contact Us</h3>
+    <p>Email: support@timespot.com</p>
+    <p>Phone: +1 234 567 890</p>
+    <p>Address: 123 Nairobi, Kenya. CBD</p>
+    <p>© 2025 TimeSpot. All rights reserved.</p>
+    <footer>
+        <div class="footer-content">
+            <div class="review-footer-box">
+                <h4>Our Latest Review</h4>
+                <div class="video-container">
+                    <iframe src="https://youtu.be/00BREVuJAIo?si=dZhOTngFa5SW4H2f" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+    
+            <div class="footer-info">
+                <p>© 2025 TimeSpot. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+</footer>
+
 </html>
