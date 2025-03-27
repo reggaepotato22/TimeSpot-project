@@ -1,87 +1,44 @@
-[
+{
+  "watches": [
     {
+      "id": 1,
       "brand": "Rolex",
       "model": "Submariner",
       "movement": "Automatic",
-      "caseMaterial": "Stainless Steel",
-      "braceletMaterial": "Stainless Steel",
-      "year": "2023",
-      "condition": "New",
-      "waterResistance": "300m",
-      "complications": ["Date"],
       "price": 15000,
-      "location": "New York",
-      "dialColor": "Black",
-      "caseSize": "41mm",
-      "inStock": true,
-      "newArrival": true
+      "image": "/watches-imgs/submariner.png"
     },
     {
+      "id": 2,
       "brand": "Patek Philippe",
       "model": "Nautilus",
       "movement": "Automatic",
-      "caseMaterial": "Stainless Steel",
-      "braceletMaterial": "Stainless Steel",
-      "year": "2020",
-      "condition": "Excellent",
-      "waterResistance": "120m",
-      "complications": ["Date"],
       "price": 120000,
-      "location": "Geneva",
-      "dialColor": "Blue",
-      "caseSize": "40mm",
-      "inStock": true,
-      "newArrival": false
+      "image": "/watches-imgs/patek.png"
     },
     {
+      "id": 3,
       "brand": "Seiko",
       "model": "Prospex",
       "movement": "Automatic",
-      "caseMaterial": "Titanium",
-      "braceletMaterial": "Rubber",
-      "year": "2022",
-      "condition": "Good",
-      "waterResistance": "200m+",
-      "complications":,
       "price": 800,
-      "location": "Tokyo",
-      "dialColor": "Black",
-      "caseSize": "43.5mm",
-      "inStock": true,
-      "newArrival": true
+      "image": "/watches-imgs/seiko.png"
     },
     {
+      "id": 4,
       "brand": "Audemars Piguet",
       "model": "Royal Oak",
       "movement": "Automatic",
-      "caseMaterial": "Stainless Steel",
-      "braceletMaterial": "Stainless Steel",
-      "year": "2021",
-      "condition": "Very Good",
-      "waterResistance": "50m",
-      "complications": ["Chronograph", "Date"],
       "price": 35000,
-      "location": "Dubai",
-      "dialColor": "Silver",
-      "caseSize": "41mm",
-      "inStock": true,
-      "newArrival": false
+      "image": "/watches-imgs/ap.png"
     },
     {
+      "id": 5,
       "brand": "Vacheron Constantin",
       "model": "Overseas",
       "movement": "Automatic",
-      "caseMaterial": "Stainless Steel",
-      "braceletMaterial": "Stainless Steel",
-      "year": "2020",
-      "condition": "Excellent",
-      "waterResistance": "150m",
-      "complications": ["Date"],
       "price": 22000,
-      "location": "Geneva",
-      "dialColor": "Blue",
-      "caseSize": "41mm",
-      "inStock": false,
-      "newArrival": true
+      "image": "/watches-imgs/vacheron.jpeg"
     }
   ]
+}

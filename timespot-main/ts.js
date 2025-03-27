@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const searchBtn = document.getElementById("search-btn");
   const resetBtn = document.getElementById("reset-btn");
 
+  
   const watches = [
       {
           brand: "Rolex",
@@ -15,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
           model: "Nautilus",
           movement: "Automatic",
           price: 25000,
-          image: "/watches-imgs/patek.jpg"
+          image: "/watches-imgs/patek.png"
       },
       {
           brand: "Seiko",
@@ -39,6 +40,15 @@ document.addEventListener("DOMContentLoaded", () => {
         image: "/watches-imgs/vacheron.jpeg"
     }
   ];
+
+   
+    fetch("https://timespot-json-server.vercel.app/watches")
+        .then(response => response.json())
+        .then(data => {
+            watches = data;
+        })
+        .catch(error => console.error("Error fetching watch data:", error));
+
 
   searchBtn.addEventListener("click", () => {
       const brand = document.getElementById("brand").value;
